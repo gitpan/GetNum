@@ -64,6 +64,79 @@ EOC
 use parent qw(Exporter);
 our @EXPORT = qw(get_int is_int is_float get_float);
 
-use version; our $VERSION = qv(1.0.0);
+use version; our $VERSION = qv(1.0.1);
 
 1;
+
+=pod
+
+=head1 NAME
+
+GetNum - coerce scalars into numbers or return undef
+
+=head1 SYNOPSIS
+
+ use GetNum;
+
+ my $i = get_int('foo'); # returns undef
+ my $i = get_int('123'); # returns 123
+
+=head1 DESCRIPTION
+
+This module can be used to force scalar to be coerced into numeric types
+in a situation when the effect of C<int()> to turn non-numerics into
+0 (zero) is not desirable.
+
+This module is handy when programming a serialization strategy for
+a Perl object into JSON where datatypes affect the output.
+
+=head1 EXPORTED SUBROUTINES
+
+All subroutines are exported by default.
+
+=over
+
+=item * B<iget_int> - coerce a scalar into an integer or return undef
+
+=item * B<is_int> - returns true if a scalar is an integer
+
+=item * B<get_float> - coerce a scalar into a float or return undef
+
+=item * B<is_float> - returns true if a scalar is a float
+
+=back
+
+=head1 SEE ALSO
+
+The discussion on SV (Perl scalar variables) manipulation functions
+in the documentation for the perlapi: L<http://perldoc.perl.org/perlapi.html#SV-Manipulation-Functions>
+
+=head1 DEPENDENCIES
+
+=over
+
+=item * Inline::C
+
+=back
+
+=head1 Revision History
+
+=over
+
+=item v1.0.0 - Original package submitted September 2014
+
+=item v1.0.1 - Added POD
+
+=back
+
+=head1 Author
+
+=over
+
+=item Aaron Dallas
+
+=item adallas@cpan.org
+
+=back
+
+=cut

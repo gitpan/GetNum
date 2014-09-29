@@ -27,9 +27,9 @@
    "provides" : {
       "GetNum" : {
          "file" : "lib/GetNum.pm",
-         "version" : "v1.0.0"
+         "version" : "v1.0.1"
       }
    },
    "release_status" : "stable",
-   "version" : "v1.0.0"
+   "version" : "v1.0.1"
 }
