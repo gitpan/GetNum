@@ -15,8 +15,8 @@ name: GetNum
 provides:
   GetNum:
     file: lib/GetNum.pm
-    version: v1.0.1
+    version: v1.0.2
 requires:
   Exporter: 0
   Inline::C: 0
-version: v1.0.1
+version: v1.0.2

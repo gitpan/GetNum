@@ -3,5 +3,6 @@ lib/GetNum.pm
 MANIFEST			This list of files
 META.json
 META.yml
+README
 t/getfloat.t
 t/getint.t

@@ -64,7 +64,7 @@ EOC
 use parent qw(Exporter);
 our @EXPORT = qw(get_int is_int is_float get_float);
 
-use version; our $VERSION = qv(1.0.1);
+use version; our $VERSION = qv(1.0.2);
 
 1;
 
@@ -126,6 +126,8 @@ in the documentation for the perlapi: L<http://perldoc.perl.org/perlapi.html#SV-
 =item v1.0.0 - Original package submitted September 2014
 
 =item v1.0.1 - Added POD
+
+=item v1.0.2 - Added README file
 
 =back
 
